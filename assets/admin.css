@@ -1,0 +1,130 @@
+.queue-triage .queue-triage-intro {
+	max-width: 60em;
+}
+
+.queue-triage-checks {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+	gap: 12px;
+	margin: 1em 0 1.5em;
+}
+
+.queue-triage-check {
+	margin: 0;
+	padding: 12px 14px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-left-width: 4px;
+}
+
+.queue-triage-check p {
+	margin: 0.5em 0 0;
+}
+
+.queue-triage-check.is-good {
+	border-left-color: #00a32a;
+}
+
+.queue-triage-check.is-recommended {
+	border-left-color: #dba617;
+}
+
+.queue-triage-check.is-critical {
+	border-left-color: #d63638;
+}
+
+.queue-triage-badge,
+.queue-triage-label {
+	display: inline-block;
+	padding: 1px 8px;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 1.8;
+	white-space: nowrap;
+	background: #f0f0f1;
+	color: #1d2327;
+}
+
+.queue-triage-check.is-good .queue-triage-badge {
+	background: #edfaef;
+	color: #005c12;
+}
+
+.queue-triage-check.is-recommended .queue-triage-badge {
+	background: #fcf9e8;
+	color: #614200;
+}
+
+.queue-triage-check.is-critical .queue-triage-badge {
+	background: #fcf0f1;
+	color: #8a2424;
+}
+
+.queue-triage-label.is-fix {
+	background: #fcf0f1;
+	color: #8a2424;
+}
+
+.queue-triage-label.is-retry {
+	background: #f0f6fc;
+	color: #0a4b78;
+}
+
+.queue-triage-label.is-review {
+	background: #fcf9e8;
+	color: #614200;
+}
+
+.queue-triage-labels {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 0 0 1em;
+}
+
+.queue-triage-labels li {
+	margin: 0;
+}
+
+.queue-triage table.widefat {
+	margin-bottom: 0.5em;
+}
+
+.queue-triage table.widefat .num {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.queue-triage-groups td {
+	vertical-align: top;
+}
+
+.queue-triage-groups td p {
+	margin: 0.5em 0 0;
+}
+
+.queue-triage-error {
+	display: block;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.queue-triage-note {
+	color: #8a2424;
+}
+
+.queue-triage-columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+	gap: 20px;
+	align-items: start;
+}
+
+.queue-triage-rows th {
+	width: 40%;
+	font-weight: 600;
+}
+
+#queue-triage-report {
+	font-size: 12px;
+}

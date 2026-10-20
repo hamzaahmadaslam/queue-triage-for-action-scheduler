@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.png binary
+
+# Left out of GitHub's source archives; the wordpress.org zip comes from bin/build.sh.
+/.github export-ignore
+/.wordpress-org export-ignore
+/bin export-ignore
+/docs export-ignore
+/tests export-ignore
+/composer.json export-ignore
+/composer.lock export-ignore
+/phpcs.xml.dist export-ignore
+/phpunit.xml.dist export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
