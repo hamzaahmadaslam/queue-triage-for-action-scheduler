@@ -24,6 +24,8 @@ class TriageTest extends TestCase {
 			array( 'Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes)', 'resource-limit', Triage::FIX ),
 			array( 'Maximum execution time of 30 seconds exceeded', 'resource-limit', Triage::FIX ),
 			array( 'acme_row(): Argument #1 ($post) must be of type WP_Post, null given', 'code-error', Triage::FIX ),
+			array( 'Argument 1 passed to acme_row() must be an instance of WP_Post, null given, called in a.php on line 45', 'code-error', Triage::FIX ),
+			array( 'Too few arguments to function acme_row(), 0 passed and exactly 1 expected', 'code-error', Triage::FIX ),
 			array( 'Call to undefined function acme_missing()', 'code-error', Triage::FIX ),
 			array( 'Call to a member function get_id() on bool', 'code-error', Triage::FIX ),
 			array( 'Class "Acme\\Client" not found', 'code-error', Triage::FIX ),

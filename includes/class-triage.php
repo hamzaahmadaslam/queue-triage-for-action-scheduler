@@ -40,7 +40,7 @@ class Triage {
 			),
 			'code-error'       => array(
 				'label'   => self::FIX,
-				'pattern' => '/\b(?:TypeError|ArgumentCountError|ParseError|ValueError|DivisionByZeroError|ArithmeticError)\b|\bUncaught (?:Error|Exception)\b|Call to (?:undefined|a member function|private|protected)|Class "?[\w\\\\]+"? not found|Interface "?[\w\\\\]+"? not found|Cannot redeclare|must be of type|Undefined (?:index|array key|variable|property|offset|constant)|Attempt to read property|Cannot access offset/i',
+				'pattern' => '/\b(?:TypeError|ArgumentCountError|ParseError|ValueError|DivisionByZeroError|ArithmeticError)\b|\bUncaught (?:Error|Exception)\b|Call to (?:undefined|a member function|private|protected)|Class "?[\w\\\\]+"? not found|Interface "?[\w\\\\]+"? not found|Cannot redeclare|must be of type|must be an instance of|must implement interface|Argument \d+ passed to \S+ must|Too few arguments to function|Undefined (?:index|array key|variable|property|offset|constant)|Attempt to read property|Cannot access offset/i',
 			),
 			'database-busy'    => array(
 				'label'   => self::RETRY,
