@@ -53,19 +53,24 @@ each push, and GitHub Actions runs the full matrix.
 
 ## wordpress.org submission
 
-Not submitted yet: the browser pane is not signed in to wordpress.org. The login page is open in it.
+Submitted 2026-10-20 from the owner's wordpress.org account (hamzaahmadaslam), with the zip from commit
+a29bd36 (40,731 bytes, sha256 15b2b391605c12bec8005103b5bf50648efff2e27a7d0bdeca643f6e9df7342f).
 
-Steps once the owner has signed in:
-
-1. Contributors in readme.txt is set to the owner's wordpress.org username, hamzaahmadaslam;
-   the zip was rebuilt and Plugin Check run again (no errors, no warnings).
-2. Upload `build/queue-triage-for-action-scheduler.zip` at https://wordpress.org/plugins/developers/add/
-   and confirm the slug shown is `queue-triage-for-action-scheduler`.
+- Assigned slug: `queue-triage-for-action-scheduler`.
+- Automated plugin scan on upload: Pass.
+- Review status: Awaiting Review. 460 plugins were waiting for a first review; the page said submissions
+  received before 2026-10-15 had had their first reply.
+- A short note for the reviewer went with it: read-only, bounded prepared SELECT queries on Action
+  Scheduler's tables, no writes, no external requests, link to this repository.
 
 ## Pending after submission
 
-- Review by the Plugins Team: 1 to 10 days. Their email goes to the address on the wordpress.org account.
-  Reply to that email with any fixes; do not submit again.
+- Review by the Plugins Team. Their email, subject "[WordPress Plugin Directory] Review in Progress: Queue
+  Triage for Action Scheduler", goes to the address on the owner's wordpress.org account; add
+  plugins@wordpress.org to the allowed senders. Reply to that email with any fixes, and upload fixed zips
+  from the Add page; never submit again. Only one plugin may be under review at a time.
+- If the reviewer finds the name too generic (the form warns that generic names are often refused), the
+  slug can be changed once before review from the Add page, and the text domain must change with it.
 - After approval, the SVN commit: copy the build into `trunk/` and `tags/1.0.0/`, and the files in
   `.wordpress-org/` (banner, icon, four screenshots) into `assets/`. Then the plugin page goes live.
 - Set the GitHub repository's website to the wordpress.org page once it exists. The portfolio site's link
