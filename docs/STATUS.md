@@ -57,8 +57,8 @@ Not submitted yet: the browser pane is not signed in to wordpress.org. The login
 
 Steps once the owner has signed in:
 
-1. Put the owner's wordpress.org username in `Contributors:` in readme.txt (it holds a placeholder now),
-   commit, rebuild with `bash bin/build.sh`, run Plugin Check again.
+1. Contributors in readme.txt is set to the owner's wordpress.org username, hamzaahmadaslam;
+   the zip was rebuilt and Plugin Check run again (no errors, no warnings).
 2. Upload `build/queue-triage-for-action-scheduler.zip` at https://wordpress.org/plugins/developers/add/
    and confirm the slug shown is `queue-triage-for-action-scheduler`.
 

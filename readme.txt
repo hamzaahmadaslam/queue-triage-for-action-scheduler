@@ -1,5 +1,5 @@
 === Queue Triage for Action Scheduler ===
-Contributors: CONTRIBUTORS_PENDING
+Contributors: hamzaahmadaslam
 Tags: action scheduler, woocommerce, wp-cron, site health, scheduled actions
 Requires at least: 6.5
 Tested up to: 7.1
